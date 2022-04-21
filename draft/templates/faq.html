@@ -1,0 +1,71 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block content %}
+  <div class="breadcrumb-area breadcrumb-area-padding-2 bg-gray-2">
+            <div class="custom-container">
+                <div class="breadcrumb-content text-center">
+                    <ul>
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+                        <li class="active">FAQs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-area fix about-us-img pt-65 pb-75">
+            <div class="container">
+                <div class="section-title-2 mb-35">
+                    <h2> Frequently Asked Questions</h2>
+                </div>
+                    <div class="payment-details-area" style="margin:0 20%;">
+                        <div class="payment-method">
+                            <div class="sin-payment payment-selected mb-20">
+                                <input id="payment_method_1" class="input-radio" type="radio" value="cheque" checked="checked" name="payment_method">
+                                <label for="payment_method_1">
+                                    Direct bank transfer
+                                </label>
+                                <div class="payment-box payment_method_bacs">
+                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                                </div>
+                            </div>
+                            <div class="sin-payment mb-20">
+                                <input id="payment-method-2" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                <label for="payment-method-2">
+                                    Check payments
+                                </label>
+                                <div class="payment-box payment_method_bacs">
+                                    <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                </div>
+                            </div>
+                            <div class="sin-payment mb-20">
+                                <input id="payment-method-3" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                <label for="payment-method-3">
+                                    Cash on delivery
+                                </label>
+                                <div class="payment-box payment_method_bacs">
+                                    <p>Pay with cash upon delivery.</p>
+                                </div>
+                            </div>
+                            <div class="sin-payment">
+                                <input id="payment-method-4" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                <label for="payment-method-4">
+                                    PayPal
+                                </label>
+                                <div class="payment-box payment_method_bacs">
+                                    <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+            </div>
+            
+        </div>
+        
+        
+
+{% include 'query.html' %}
+
+{% endblock %}
